@@ -29,19 +29,17 @@ public class ProductRepositoryTest {
 	@Autowired
 	CategoryRepository categoryRepository;
 	
-	@Test
-	public void testGetProducts() {
-		List<Product> products = (List<Product>) productRepository.findAll();
-		
-		assertTrue(products.get(0).getName().equals("apple"));
-	}
-	
-	@Test
-	public void testFindById() {
-		Product product = productRepository.findById(1l).orElse(null);
-		
-		assertNotNull(product);
-	}
+	/*
+	 * @Test public void testGetProducts() { List<Product> products =
+	 * (List<Product>) productRepository.findAll();
+	 * 
+	 * assertTrue(products.get(0).getName().equals("apple")); }
+	 * 
+	 * @Test public void testFindById() { Product product =
+	 * productRepository.findById(1l).orElse(null);
+	 * 
+	 * assertNotNull(product); }
+	 */
 	
 	@Test
 	public void testSave() {
