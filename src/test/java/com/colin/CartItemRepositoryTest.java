@@ -33,12 +33,12 @@ public class CartItemRepositoryTest {
 	@Autowired
 	CartItemRepository cartItemRepository;
 	
-	@Test
+	/*@Test
 	public void testGetCartItems() {
 		List<CartItem> cartItem = (List<CartItem>) cartItemRepository.findAll();
 		
 		assertTrue(cartItem.get(0).getQuantity() == 2);
-	}
+	}*/
 	
 	/*@Test
 	public void testSaveCartItem() {
@@ -60,7 +60,7 @@ public class CartItemRepositoryTest {
 		assertTrue(cI.getProduct().getName().equals(cI2.getProduct().getName()));
 	}*/
 	
-	@Test
+	/*@Test
 	public void testDelteCartItem() {
 		Category c = new Category(1, "fruit", new ArrayList<>());
 		Product p = new Product(1, "apple", 5, 5, c, new ArrayList<>());
@@ -79,7 +79,7 @@ public class CartItemRepositoryTest {
 		
 		assertNull(cartItemRepository.findById(20l).orElse(null));
 		
-	}
+	}*/
 
 	
 }
